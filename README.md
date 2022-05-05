@@ -2,10 +2,15 @@
 #Comandos de instalación de Postgresql y Pgadmin
 
 sudo apt update
+
 sudo apt install postgresql postgresql-contrib
+
 sudo su - postgres
+
 psql
+
 \l
+
 create user curso with password 'Curso2021.';
 create database db_curso with owner curso;
 alter user curso with superuser;
