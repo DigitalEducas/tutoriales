@@ -1,4 +1,4 @@
-# tutoriales
+# tutoriales de Instalación
 #Comandos de instalación de Postgresql y Pgadmin
 
 sudo apt update
