@@ -41,7 +41,7 @@ Guarde y cierre el archivo, luego reinicie el servicio httpd:
 
 sudo systemctl restart httpd
 
-Puede hacer esto editando el httpd.confarchivo:
+Puede hacer esto editando el archivo **httpd.conf**
 
 sudo vi /etc/httpd/conf/httpd.conf
  
