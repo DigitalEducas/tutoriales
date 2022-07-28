@@ -5,12 +5,17 @@ Darle permisos al directorio: **sudo chmod 777 -R /var/www/html**
 **Paso 2: Debemos configurar el fichero .htaccess añadiendo el siguiente código**
 
 RewriteEngine on
+
 RewriteCond %{REQUEST_FILENAME} !-d
+
 RewriteCond %{REQUEST_FILENAME}.php -f
+
 RewriteRule ^(.*)$ $1.php
 
 RewriteCond %{REQUEST_FILENAME} !-d
+
 RewriteCond %{REQUEST_FILENAME}.html -f
+
 RewriteRule ^(.*)$ $1.html
 
 **Paso 3: Crearemos un archivo info.php e ingresamos el siguiente código:**
