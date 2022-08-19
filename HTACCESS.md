@@ -38,7 +38,10 @@ sudo gedit /etc/apache2/sites-available/000-default.conf
 
 Agregar estás lineas, después de **DocumentRoot **/var/www/html:****
 
-  **<Directory /var/www/html>AllowOverride All </Directory>**
+  **<Directory /var/www/html>AllowOverride All 
+  
+  
+  **</Directory>**
 
 Reiniciamos Apache:
 
