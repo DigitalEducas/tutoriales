@@ -40,7 +40,7 @@ Agregar estás lineas, después de **DocumentRoot **/var/www/html:**
 
   **<Directory /var/www/html>AllowOverride All **
     
-  Antes del directorio colocar el eslash **< / Directory >**
+  **< / Directory >**
 
 Reiniciamos Apache:
 
