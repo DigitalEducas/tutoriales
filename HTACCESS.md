@@ -36,11 +36,11 @@ sudo service apache2 restart
 
 sudo gedit /etc/apache2/sites-available/000-default.conf
 
-Agregar estás lineas, después de **DocumentRoot **/var/www/html:****
+Agregar estás lineas, después de **DocumentRoot **/var/www/html:**
 
   **<Directory /var/www/html>AllowOverride All **
     
-  Antes del directorio colocar el eslash **< Directory>**
+  Antes del directorio colocar el eslash **< / Directory >**
 
 Reiniciamos Apache:
 
