@@ -10,11 +10,11 @@ psql
 
 \l
 
-create user curso with password 'Curso2021.';
+create user nuevo with password 'nuevo2021';
 
-create database db_curso with owner curso;
+create database db_prueba with owner nuevo;
 
-alter user curso with superuser;
+alter user nuevo with superuser;
 
 sudo apt install curl
 
