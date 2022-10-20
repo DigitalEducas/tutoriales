@@ -50,7 +50,9 @@ sudo apt-get install php-pgsql
 
 **Archivo de conexión que debe ser creado dentro de www/html/**
 
-**<?php
+**
+
+<?php
 
 $db = pg_connect("host=localhost port=5432 dbname=db_prueba user=postgres password=postgre");
 
@@ -62,7 +64,9 @@ $db = pg_connect("host=localhost port=5432 dbname=db_prueba user=postgres passwo
 
      echo "<p><b>Conexión Exitosa</b></p>";
 
-?>**
+?>
+
+**
 
 **Reiniciamos los servidores**
 
