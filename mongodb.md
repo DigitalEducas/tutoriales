@@ -18,7 +18,7 @@ sudo apt install mongodb-org -y
 
 **Aplicar en cado de instalar un versión especifica**
 
-sudo apt-get install -y mongodb-org=<version> mongodb-org-database=<version> mongodb-org-server=<version> mongodb-org-shell=<version> mongodb-org-mongos=<version> mongodb-org-tools=<version>
+sudo apt-get install -y mongodb-org=version mongodb-org-database=version mongodb-org-server=version mongodb-org-shell=version mongodb-org-mongos=version mongodb-org-tools=version
   
 sudo systemctl start mongod
   
