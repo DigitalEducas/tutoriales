@@ -1,18 +1,25 @@
-#***Comandos básicos de Linux***#
+# Comandos básicos de Linux
+**1. pwd:** El comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras
 
-    1. **pwd:** El comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras
+**2. ls:** Se usa para ver el contenido de un directorio
+
+   **• ls -R** También listará todos los archivos en los subdirectorios
     
-    2. ls: Se usa para ver el contenido de un directorio
+   **• ls -a** Mostrará los archivos ocultos
+   
+   **• ls -al** Listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc.
+   
+ **3. cd:** Se utiliza para navegar por los archivos y directorios de Linux
+ 
+   **• cd ..** (con dos puntos) para ir un directorio hacia atrás
     
-    • ls -R También listará todos los archivos en los subdirectorios
-    • ls -a Mostrará los archivos ocultos
-    • ls -al Listará los archivos y directorios con información detallada como los permisos, el tamaño, el propietario, etc.
-    3. cd: Se utiliza para navegar por los archivos y directorios de Linux
-    • cd .. (con dos puntos) para ir un directorio hacia atrás
-    4.  cat: Se utiliza para visualizar el contenido de un archivo
-    • cat > nombredearchivo crea un nuevo archivo.
-    • cat nombredearchivo1 nombredearchivo2>nombredearchivo3 une dos archivos (1 y 2) y almacena la salida de ellos en un nuevo archivo (3)
-    5. cp: El comando cp se utiliza para copiar archivos cp archivo.txt copia.txt
+ **4.  cat:** Se utiliza para visualizar el contenido de un archivo
+ 
+   **• cat > nombredearchivo** crea un nuevo archivo.
+   
+   **• cat nombredearchivo1 nombredearchivo2>nombredearchivo3** une dos archivos (1 y 2) y almacena la salida de ellos en un nuevo archivo (3)
+   
+ **5. cp:** El comando cp se utiliza para copiar archivos cp archivo.txt copia.txt
     6. mv: El comando mv es mover archivos, aunque también se puede usar para cambiar el nombre de los archivos. es mv nombreviejo.ext nombrenuevo.ext
     7. mkdir: Si escribes mkdir Musica, creará un directorio llamado Música.
     8. rmdir: El comando rmdir, solo permite eliminar directorios vacíos
