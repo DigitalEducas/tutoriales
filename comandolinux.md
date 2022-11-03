@@ -1,4 +1,4 @@
-***Comandos básicos de Linux***
+#***Comandos básicos de Linux***
 
     1. **pwd:** El comando pwd para encontrar la ruta del directorio (carpeta) de trabajo actual en el que te encuentras
     
