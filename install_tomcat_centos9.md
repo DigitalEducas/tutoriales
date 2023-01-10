@@ -99,7 +99,7 @@ sudo firewall-cmd --reload
 
 sudo nano /opt/tomcat/apache-tomcat-9.0.31/conf/tomcat-users.xml
 
-***< tomcat-users >**
+***< tomcat-users >***
 
    < role rolename="admin-gui" />
    
