@@ -1,35 +1,35 @@
 ***Guía de Instalación de Tomcat 9 en Centos Stream 9***
 
-**INSTALACIÓN DE OPENJDK
+**INSTALACIÓN DE OPENJDK**
 
 sudo dnf install java-11-openjdk-devel
 
-**CREACIÓN DEL USUARIO TOMCAT
+**CREACIÓN DEL USUARIO TOMCAT**
 
 sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
 
-**DESCARGAR TOMCAT
+**DESCARGAR TOMCAT**
 
 cd /tmp
 wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
 
-**DESCOMPRIMIMOS EL FICHERO
+**DESCOMPRIMIMOS EL FICHERO**
 
 tar -xf apache-tomcat-9.0.31.tar.gz
 
-**MOVEMOS LOS ARCHIVOS DESCOMPRIMIDOS
+**MOVEMOS LOS ARCHIVOS DESCOMPRIMIDOS**
 
 sudo mv apache-tomcat-9.0.31 /opt/tomcat/
 
-**CAMBIAMOS LOS PERMISO DE LA CARPETA /opt/tomcat
+**CAMBIAMOS LOS PERMISO DE LA CARPETA /opt/tomcat**
 
 sudo chown -R tomcat: /opt/tomcat/
 
-**CONVERTIMOS LOS SCRIPT, QUE HAY DEL SUBDIRECTORIO BIN, EN FICHEROS EJECUTABLES
+**CONVERTIMOS LOS SCRIPT, QUE HAY DEL SUBDIRECTORIO BIN, EN FICHEROS EJECUTABLES**
 
 sudo sh -c 'chmod +x /opt/tomcat/apache-tomcat-9.0.31/bin/*.sh'
 
-**CRACIÓN DEL SERVICIO TOMCAT
+**CRACIÓN DEL SERVICIO TOMCAT**
 
 sudo nano /etc/systemd/system/tomcat.service
 
@@ -57,17 +57,17 @@ ExecStop=/opt/tomcat/apache-tomcat-9.0.31/bin/shutdown.sh
 [Install]
 WantedBy=multi-user.target
 
-**INFORMAMOS AL SISTEMA DE LA CREACIÓN DEL SERVICIO DE TOMCAT
+**INFORMAMOS AL SISTEMA DE LA CREACIÓN DEL SERVICIO DE TOMCAT**
 
 sudo systemctl daemon-reload
 
-**CONFIGURAMOS EL SERVICIO DE TOMCAT
+**CONFIGURAMOS EL SERVICIO DE TOMCAT**
 
 sudo systemctl enable tomcat
 sudo systemctl start tomcat
 sudo systemctl status tomcat
 
-**DESACTIVAR SELINUX
+**DESACTIVAR SELINUX**
 
 sudo nano /etc/selinux/config
 cambiamos el valor “enforcing” a “permissive” 
@@ -75,12 +75,12 @@ cambiamos el valor “enforcing” a “permissive”
 sudo systemctl restart tomcat
 sudo systemctl status tomcat
 
-**CONFIGURACIÓN DE FIREWALL
+**CONFIGURACIÓN DE FIREWALL**
 
 sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent 
 sudo firewall-cmd --reload
 
-**CONFIGURACIÓN DE LA WEB DE ADMINISTRACIÓN TOMCAT
+**CONFIGURACIÓN DE LA WEB DE ADMINISTRACIÓN TOMCAT**
 
 sudo nano /opt/tomcat/apache-tomcat-9.0.31/conf/tomcat-users.xml
 <tomcat-users>
@@ -89,7 +89,7 @@ sudo nano /opt/tomcat/apache-tomcat-9.0.31/conf/tomcat-users.xml
    <user username="admin" password="contraseña que deseemos" roles="admin-gui,manager-gui"/>
 </tomcat-users>
 
-**CONFIGURAMOS PARA PODER INGRESAR POR CUALQUIER IP
+**CONFIGURAMOS PARA PODER INGRESAR POR CUALQUIER IP**
 
 sudo nano /opt/tomcat/apache-tomcat-9.0.31/webapps/manager/META-INF/context.xml
 
