@@ -11,6 +11,7 @@ sudo useradd -m -U -d /opt/tomcat -s /bin/false tomcat
 **DESCARGAR TOMCAT**
 
 cd /tmp
+
 wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.31/bin/apache-tomcat-9.0.31.tar.gz
 
 **DESCOMPRIMIMOS EL FICHERO**
