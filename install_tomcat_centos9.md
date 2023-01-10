@@ -98,11 +98,11 @@ sudo firewall-cmd --reload
 **CONFIGURACIÓN DE LA WEB DE ADMINISTRACIÓN TOMCAT**
 
 sudo nano /opt/tomcat/apache-tomcat-9.0.31/conf/tomcat-users.xml
-<tomcat-users>
-   <role rolename="admin-gui"/>
-   <role rolename="manager-gui"/>
-   <user username="admin" password="contraseña que deseemos" roles="admin-gui,manager-gui"/>
-</tomcat-users>
+***< tomcat-users >**
+   < role rolename="admin-gui" />
+   < role rolename="manager-gui" />
+   < user username="admin" password="contraseña que deseemos" roles="admin-gui,manager-gui" />
+</ tomcat-users >
 
 **CONFIGURAMOS PARA PODER INGRESAR POR CUALQUIER IP**
 
