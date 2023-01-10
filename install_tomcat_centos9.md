@@ -74,20 +74,25 @@ sudo systemctl daemon-reload
 **CONFIGURAMOS EL SERVICIO DE TOMCAT**
 
 sudo systemctl enable tomcat
+
 sudo systemctl start tomcat
+
 sudo systemctl status tomcat
 
 **DESACTIVAR SELINUX**
 
 sudo nano /etc/selinux/config
+
 cambiamos el valor “enforcing” a “permissive” 
 
 sudo systemctl restart tomcat
+
 sudo systemctl status tomcat
 
 **CONFIGURACIÓN DE FIREWALL**
 
 sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent 
+
 sudo firewall-cmd --reload
 
 **CONFIGURACIÓN DE LA WEB DE ADMINISTRACIÓN TOMCAT**
