@@ -35,27 +35,36 @@ sudo sh -c 'chmod +x /opt/tomcat/apache-tomcat-9.0.31/bin/*.sh'
 sudo nano /etc/systemd/system/tomcat.service
 
 [Unit]
+
 Description=Tomcat 9 servlet container
+
 After=network.target
 
 [Service]
+
 Type=forking
 
 User=tomcat
 Group=tomcat
 
 Environment="JAVA_HOME=/usr/lib/jvm/jre"
+
 Environment="JAVA_OPTS=-Djava.security.egd=file:///dev/urandom"
 
 Environment="CATALINA_BASE=/opt/tomcat/apache-tomcat-9.0.31"
+
 Environment="CATALINA_HOME=/opt/tomcat/apache-tomcat-9.0.31"
+
 Environment="CATALINA_PID=/opt/tomcat/apache-tomcat-9.0.31/temp/tomcat.pid"
+
 Environment="CATALINA_OPTS=-Xms512M -Xmx1024M -server -XX:+UseParallelGC"
 
 ExecStart=/opt/tomcat/apache-tomcat-9.0.31/bin/startup.sh
+
 ExecStop=/opt/tomcat/apache-tomcat-9.0.31/bin/shutdown.sh
 
 [Install]
+
 WantedBy=multi-user.target
 
 **INFORMAMOS AL SISTEMA DE LA CREACIÓN DEL SERVICIO DE TOMCAT**
