@@ -16,11 +16,11 @@ deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/6
 
 sudo apt-get update
 
-**INSTALAMOS MONGODB Y SUS PAQUETES **
+**INSTALAMOS MONGODB Y SUS PAQUETES**
 
 sudo apt-get install -y mongodb-org
 
-**INICIAMOS MONGODB **
+**INICIAMOS MONGODB**
 
 sudo systemctl start mongod
 sudo systemctl status mongod
@@ -33,7 +33,7 @@ mongosh
 
 wget https://downloads.mongodb.com/compass/mongodb-compass_1.35.0_amd64.deb
 
-**INSTALAMOS MONGODB COMPASS **
+**INSTALAMOS MONGODB COMPASS**
 
 sudo dpkg -i mongodb-compass_1.35.0_amd64.deb
 
