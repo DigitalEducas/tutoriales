@@ -4,7 +4,7 @@
 
 wget -qO - https://www.mongodb.org/static/pgp/server-6.0.asc | sudo apt-key add -
 
-**CREAMOS EL ARCHIVO PARA MONGODB **
+**CREAMOS EL ARCHIVO PARA MONGODB**
 
 sudo gedit /etc/apt/sources.list.d/mongodb-org-6.0.list
 
