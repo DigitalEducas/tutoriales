@@ -23,6 +23,7 @@ sudo apt-get install -y mongodb-org
 **INICIAMOS MONGODB**
 
 sudo systemctl start mongod
+
 sudo systemctl status mongod
 
 **INGRESAMOS A LA CONSOLA DE MONGODB**
